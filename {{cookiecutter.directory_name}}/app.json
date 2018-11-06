@@ -26,8 +26,8 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "{{cookiecutter.bundle_identifier}}",
-      "publishBundlePath": "ios/{{cookiecutter-project_name}}/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/{{cookiecutter-project_name}}/Supporting/shell-app-manifest.json"
+      "publishBundlePath": "ios/{{cookiecutter.project_name}}/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/{{cookiecutter.project_name}}/Supporting/shell-app-manifest.json"
     },
     "android": {
       "package": "{{cookiecutter.package_name}}",
