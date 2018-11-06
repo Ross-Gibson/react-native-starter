@@ -5,6 +5,7 @@
   "bundle_identifier": "com.{{cookiecutter.company_name | replace(' ', '-') | lower}}.{{cookiecutter.project_name | replace(' ', '-') | lower}}",
   "package_name": "com.{{cookiecutter.company_name | replace(' ', '-') | lower}}.{{cookiecutter.project_name | replace(' ', '-') | lower}}",
   "package_path": "{{cookiecutter.package_name | replace('.', '/')}}",
+  "expo_slug": "my-app-name",
   "_copy_without_render": [
     "android/gradlew",
     "android/gradlew.bat",
