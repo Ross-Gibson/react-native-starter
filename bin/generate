@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+replace() {
+  from="$1"
+  to="$2"
+
+  find TmpProject -type f ! -name "gradlew" ! -name "gradlew.bat" ! -name "gradle-wrapper.jar" -print0 \
+    | xargs -0 perl -i -pe "s/$from/$to/g"
+
+  find TmpProject -depth -name "$from*" -print0 \
+    | xargs -0 rename "s/$from([^\/]*)$/$to\$1/"
+}
+
+# rm -rf TmpProject
+# rsync -r --exclude=node_modules --exclude="**/ios/build" TemplateProject/ TmpProject
+
+# replace "TemplateProject" "{{cookiecutter.project_name}}"
+# replace "com.companyname.templateproject" "{{cookiecutter.package_name}}"
+# replace "package_path" "{{cookiecutter.package_path}}"
+# replace "CompanyName" "{{cookiecutter.company_name}}"
+
+# rm -rf "{{cookiecutter.directory_name}}"
+# mv TmpProject "{{cookiecutter.directory_name}}"

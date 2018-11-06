@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "{{cookiecutter.project_name}}",
+    "description": "A very interesting project.",
+    "slug": "{{cookiecutter.expo_slug}}",
+    "privacy": "public",
+    "sdkVersion": "31.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "{{cookiecutter.bundle_identifier}}",
+      "publishBundlePath": "ios/{{cookiecutter-project_name}}/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/{{cookiecutter-project_name}}/Supporting/shell-app-manifest.json"
+    },
+    "android": {
+      "package": "{{cookiecutter.package_name}}",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.9.0-sdk31.0.0-250a3991-b623-4f9c-b07f-0b9ed7e8c4c9.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.9.0-sdk31.0.0-91d15219-d0a0-42a6-8f40-a768710d4664.tar.gz"
+    },
+    "scheme": "exp29d0e83f8cf34aeab9e72ea7d0c415dd"
+  }
+}

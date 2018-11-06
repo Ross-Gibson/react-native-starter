@@ -1,0 +1,8 @@
+default_context:
+  project_name: "MyAppName"
+  company_name: "mycompanyname"
+  directory_name": "MyAppName"
+  bundle_identifier: "com.mycompanyname.myappname"
+  package_name: "com.mycompanyname.myappname"
+  package_path: "com/mycompanyname/myappname"
+  expo_slug: "example-expo-slug"

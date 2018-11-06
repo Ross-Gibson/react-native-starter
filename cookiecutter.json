@@ -1,0 +1,14 @@
+{
+  "project_name": "MyAppName",
+  "company_name": "mycompanyname",
+  "directory_name": "{{cookiecutter.project_name}}",
+  "bundle_identifier": "com.{{cookiecutter.company_name | replace(' ', '-') | lower}}.{{cookiecutter.project_name | replace(' ', '-') | lower}}",
+  "package_name": "com.{{cookiecutter.company_name | replace(' ', '-') | lower}}.{{cookiecutter.project_name | replace(' ', '-') | lower}}",
+  "package_path": "{{cookiecutter.package_name | replace('.', '/')}}",
+  "_copy_without_render": [
+    "android/gradlew",
+    "android/gradlew.bat",
+    "android/gradle/wrapper/gradle-wrapper.jar",
+    "*node_modules"
+  ]
+}
